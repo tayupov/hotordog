@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body class="container">
+
+    <header>
+        <% include ../partials/header %>
+    </header>
+
+    <main>
+      <img id="dog" src="<%= dogSrc %>" alt="dog">
+      <form action="dogs" method="post">
+        <input type="hidden" name="image" value="<%= dogSrc %>" />
+        <input type="submit" name="action" value="Hot" />
+        <input type="submit" name="action" value="Not" />
+      </form>
+    </main>
+
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+</body>
+</html>
